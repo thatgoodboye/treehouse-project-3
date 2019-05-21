@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>The Code Review</title>
+
+        <!-- Normalize.CSS -->
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="css/styles.css"> 
+        <!-- Google Fonts: Merriweather -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body lang="en">
+
+        <header>
+
+             <h1 class="title title-invert m-0">THE CODE REVIEW</h1>
+
+        </header>
+
+        <main>
+
+            <section id="intro">
+
+                <h2 class="title m-0">Signup for our newsletter</h2>
+            
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+
+            </section>
+            
+            <!-- border styling -->
+            <div class="b-double"></div> 
+
+            <form action="" method="post">
+
+                <fieldset id="contact">
+                   
+                    <legend class="title">Contact Information</legend> 
+
+                    <!-- NOTE TO SELF: [for] targets id -->
+                    
+                    <div> <!-- flex groups -->                        
+                        <label for="name" class="label">Full Name</label>
+                        <input id="name" type="text" name="name" placeholder="Required" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Required" required>
+                    </div>
+
+                    <div>                            
+                        <label for="tel">Phone Number</label>
+                        <input id="tel" type="tel" name="tel" placeholder="+1(555)555-1234">
+                    </div>
+
+                    <div>
+                        <label for="address">Street Address</label>
+                        <input id="address" type="text" name="address" placeholder="123 Big Blue House">
+                    </div>
+
+                    <div>
+                        <label for="city">City</label>
+                        <input id="city" type="text" name="city" placeholder="Dalaran">
+                    </div>
+
+                    <div>
+                        <label for="state" class="label">State</label>
+                        <select id="state" name="state">
+                            <option value="">Choose State</option>
+                            <option value="texas">Texas</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="">...</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="zip" class="label">Zip Code</label>
+                        <input type="text" id="zip" name="zip" placeholder="12345">
+                    </div>
+
+                </fieldset>
+
+                <!-- border styling -->
+                <div class="b"></div> 
+
+                <fieldset id="newsletter">
+                    
+                    <legend class="title">Newsletter</legend>
+
+                    <!-- Label for set of checkboxes -->
+                    <label class="label">Select the newsletter you would like to recieve</label>
+                    
+                    <div>
+                        <input type="checkbox" id="html-news" name="html-news" value="html-news">
+                        <label for="html-news" class="label">HTML News</label><br>
+                    </div>
+
+                    <div>                            
+                        <input type="checkbox" id="css-news" name="css-news" value="css-news">
+                        <label for="css-news" class="label">CSS News</label><br>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="js-news" name="js-news" value="js-news">
+                        <label for="js-news" class="label">JS News</label><br>
+                    </div>
+                    
+                    <!-- Label for set of checkboxes -->
+                    <label class="label">Newsletter format</label>
+
+                    <div>
+                        <input type="radio" id="html-format" name="format" value="html-format">
+                        <label for="html-format" class="label">HTML</label>                        
+                    </div>
+
+                    <div>                        
+                        <input type="radio" id="plain-text-format" name="format" value="plain-text-format">
+                        <label for="plain-text-format" class="label">Plain text</label>
+                    </div>
+                    
+                    <label for="other" class="label">Other topics you'd like to hear about</label>
+                    <textarea id="other" name="other" placeholder="Node.js, Express, Typescript, etc"></textarea>
+                    
+                    <button type="submit" class="button">Sign Up</button>
+
+                </fieldset>
+
+            </form>
+
+        </main>
+
+        <footer class="tc">
+
+            <p><small><i>Copyright The Code Review</i></small></p>
+
+        </footer>
+
+    </body>
+</html>
